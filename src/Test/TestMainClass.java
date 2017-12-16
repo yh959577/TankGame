@@ -4,12 +4,14 @@ import Test.TestFrame.GameFrame;
 import Test.TestFrame.WelcomeFrame;
 
 import javax.swing.*;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class TestMainClass {
  public static void main(String[] args){
-     JFrame welcome=new WelcomeFrame();
+     WelcomeFrame welcome=new WelcomeFrame();
      JFrame game=new GameFrame();
      welcome.setVisible(true);
      welcome.addKeyListener(new KeyListener() {
