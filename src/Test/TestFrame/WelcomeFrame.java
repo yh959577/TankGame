@@ -20,10 +20,11 @@ public class WelcomeFrame extends BaseFrame {
       Image image=new ImageIcon("Image/background.jpg").getImage();
        @Override
        protected void paintComponent(Graphics g) {
+
            super.paintComponent(g);
            Dimension size=this.getParent().getSize();
            g.drawImage(image,0,0,size.width,size.height,null);
-           g.drawString("start game",size.width/2,size.height);
+
        }
    }
 

@@ -12,7 +12,7 @@ import java.awt.*;
        setTitle(Const.gameTitle);
        setLocationByPlatform(true);
        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
+       setResizable(false);
     }
 
 
