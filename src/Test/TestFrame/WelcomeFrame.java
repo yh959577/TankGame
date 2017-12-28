@@ -1,7 +1,6 @@
 package Test.TestFrame;
 
 import Test.Const.Const;
-import Test.TestComponent.WelcomeComponent;
 import Test.TestFrame.BaseFrame;
 
 import javax.swing.*;

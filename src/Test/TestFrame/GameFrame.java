@@ -9,6 +9,7 @@ import java.awt.*;
 
 public class GameFrame extends BaseFrame {
 private TankLabel playerTank;
+private Thread enemyGenerateThread;
 
     public GameFrame(){
       super();
@@ -17,39 +18,19 @@ private TankLabel playerTank;
       this.add(playerTank);
     }
 
-    public void moveTankUp(){
+    public void movePlayerTankUp(){
         playerTank.moveUp();
     }
-    public void moveTankDown(){
+    public void movePlayerTankDown(){
         playerTank.moveDown();
     }
 
-    public void moveTankLeft(){
+    public void movePlayerTankLeft(){
         playerTank.moveLeft();
     }
 
-    public void moveTankRight(){
+    public void movePlayerTankRight(){
         playerTank.moveRight();
-    }
-
-
-//    class TankLabel extends JLabel{
-//          Image image=new ImageIcon("Image/tank.jpg").getImage();
-//
-//        @Override
-//        protected void paintComponent(Graphics g) {
-//            super.paintComponent(g);
-//            Dimension parentSize=this.getParent().getSize();
-//            int width=parentSize.width;
-//            int height=parentSize.height;
-//            int tankSide=width/10;
-//            g.drawImage(image,0,height-tankSide,tankSide,tankSide,null);
-//            moveThisTank(g);
-//        }
-  //  }
-
-    public void  moveThisTank(Graphics graphics){
-
     }
 
 }

@@ -2,10 +2,9 @@ package Test;
 
 import Test.TestFrame.GameFrame;
 import Test.TestFrame.WelcomeFrame;
+import Test.TestLabel.PlayerTank;
 
-import javax.swing.*;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -46,17 +45,16 @@ public class TestMainClass {
          @Override
          public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode()==VK_UP||e.getKeyCode()==VK_W){
-                      game.moveTankUp();
+                      game.movePlayerTankUp();
                 } if (e.getKeyCode()==VK_DOWN||e.getKeyCode()==VK_S){
-                 game.moveTankDown();
+                 game.movePlayerTankDown();
                 }
                 if (e.getKeyCode()==VK_LEFT||e.getKeyCode()==VK_A){
-                    game.moveTankLeft();
+                    game.movePlayerTankLeft();
                 }
                 if (e.getKeyCode()==VK_RIGHT||e.getKeyCode()==VK_D){
-                    game.moveTankRight();
+                    game.movePlayerTankRight();
                 }
-
          }
 
          @Override
